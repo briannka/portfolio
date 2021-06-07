@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Card from './components/Card'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="divider" />
+      <div className="about">About Me
+      <p>I am an experienced technical writer, who is very pationate about front-end web development.</p>
+      </div>
+      <div className="divider" />
+      <div className="technologies">What I know
+      <div className="tech-stack-container">
+      <img id="html" alt=""></img>
+      <img id="css" alt=""></img>
+      <img id="sass" alt=""></img>
+      <img id="js" alt=""></img>
+      <img id="react" alt=""></img>
+      <img id="webpack" alt=""></img>
+      <img id="jest" alt=""></img>
+      </div>
+      </div>
+      <div className="divider" />
+      <div className="projects">My projects
+      <Card title={'test'} img={'test'}/>
+      </div>
     </div>
   );
 }

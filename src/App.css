@@ -14,19 +14,123 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url(./images/header.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.intro {
+  color: white;
+  font-size: 100px;
+}
+
+.divider {
+  background-image: url(./images/header.jpeg);
+  height: 40px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #f5cfd4, #e48d97);
+  color: white;
+  align-items: center;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.about p {
+  height: 100px;
+  width: 450px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to left, #f5cfd4, #e48d97);
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.tech-stack-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+.tech-stack-container img {
+  background-repeat: no-repeat;
+  padding: 20px;
+  max-height: 96px;
+  max-width: 288px;
+  border-color: none;
+}
+
+#html {
+  background-image: url('./images/html.png');
+  max-height: 96px;
+  max-width: 288px;
+}
+
+#css {
+  background-image: url('./images/css.png');
+}
+
+#sass {
+  background-image: url('./images/sass.png');
+}
+
+#js {
+  background-image: url('./images/js.png');
+}
+
+#react {
+  background-image: url('./images/react.png');
+}
+
+#webpack {
+  background-image: url('./images/webpack.png');
+}
+
+#jest {
+  background-image: url('./images/jest.png');
+}
+
+.card-wrapper {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #f5cfd4, #e48d97);
+  color: white;
+  align-items: center;
+  font-size: 24px;
+  padding: 20px;
+}
+
 
 @keyframes App-logo-spin {
   from {
